@@ -1,4 +1,4 @@
 FROM amazoncorretto:17
-ARG JAR_FILE=build/libs/KuleumBridgeServer.jar
+ARG JAR_FILE=build/libs/Kuleum_Bridge_Server.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
