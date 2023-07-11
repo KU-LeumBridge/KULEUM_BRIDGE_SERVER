@@ -8,11 +8,9 @@ plugins {
 }
 
 allOpen {
-    annotations(
-        "javax.persistence.Entity",
-        "javax.persistence.MappedSuperclass",
-        "javax.persistence.Embedabble"
-    )
+    annotation("jakarta.persistence.MappedSuperclass")
+    annotation("jakarta.persistence.Entity")
+    annotation("jakarta.persistence.Embeddable")
 }
 
 group = "com.example"
