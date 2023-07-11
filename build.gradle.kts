@@ -7,6 +7,14 @@ plugins {
     kotlin("plugin.spring") version "1.8.22"
 }
 
+allOpen {
+    annotations(
+        "javax.persistence.Entity",
+        "javax.persistence.MappedSuperclass",
+        "javax.persistence.Embedabble"
+    )
+}
+
 group = "com.example"
 
 java {
